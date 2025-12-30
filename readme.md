@@ -1,6 +1,6 @@
 <p align="center">
 <a href="" rel="noopener">
-<img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+<img width=200px height=200px src="https://yt3.googleusercontent.com/caqRf4lIyodH_wmjdafODKqOd00fGDCjH8YXPKJxr2EFcVZTqG4ZnOx54lME3e80Q1jEjx8e=s160-c-k-c0x00ffffff-no-rj" alt="Project logo"></a>
 </p>
 
 <h3 align="center">Deepfake & Cartoon Forensic System</h3>
