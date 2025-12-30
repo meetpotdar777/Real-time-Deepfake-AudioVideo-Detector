@@ -1,114 +1,136 @@
 <p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+<a href="" rel="noopener">
+<img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
 </p>
 
-<h3 align="center">Project Title</h3>
+<h3 align="center">Deepfake & Cartoon Forensic System</h3>
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
 </div>
 
----
+<p align="center"> A high-precision, real-time forensic suite designed to detect AI-generated video (Deepfakes), synthetic audio, and 2D spoofing attempts using 3D biometric liveness and spectral analysis.
 
-<p align="center"> Few lines describing your project.
-    <br> 
+
+
+
+
 </p>
 
-## 📝 Table of Contents
+📝 Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+About
 
-## 🧐 About <a name = "about"></a>
+Getting Started
 
-Write about 1-2 paragraphs describing the purpose of your project.
+Usage
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+Built Using
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+Logic Matrix
 
-### Prerequisites
+Authors
 
-What things you need to install the software and how to install them.
+Acknowledgments
 
-```
-Give examples
-```
+🧐 About <a name = "about"></a>
 
-### Installing
+This project provides a robust solution for real-time digital integrity verification. By combining MediaPipe's 3D Face Mesh with a Deep Learning Audio Analysis engine, the system can distinguish between a real human, a deepfake video, and a simple 2D image or cartoon.
 
-A step by step series of examples that tell you how to get a development env running.
+The core purpose is to prevent identity spoofing in video calls or recordings by checking for "Biometric Liveness" (Z-depth variance) and identifying spectral artifacts common in AI-generated synthetic speech.
 
-Say what the step will be
+🏁 Getting Started <a name = "getting_started"></a>
 
-```
-Give the example
-```
+These instructions will help you set up the forensic suite on your local machine for real-time analysis.
 
-And repeat
+Prerequisites
 
-```
-until finished
-```
+You need Python 3.10+ installed and a working webcam and microphone.
 
-End with an example of getting some data out of the system or using it for a little demo.
+# Verify your python version
+python --version
 
-## 🔧 Running the tests <a name = "tests"></a>
 
-Explain how to run the automated tests for this system.
+Installing
 
-### Break down into end to end tests
+Navigate to the project directory:
 
-Explain what these tests test and why
+cd "C:\Users\Administrator\OneDrive\Desktop\Python\Real time Deepfake AudioVideo Detector"
 
-```
-Give an example
-```
 
-### And coding style tests
+Install the required dependencies:
 
-Explain what these tests test and why
+pip install opencv-python mediapipe numpy librosa sounddevice tensorflow scipy
 
-```
-Give an example
-```
 
-## 🎈 Usage <a name="usage"></a>
+Ensure Model Files are present:
+The directory must contain:
 
-Add notes about how to use the system.
+deepfake_video_detector.h5
 
-## 🚀 Deployment <a name = "deployment"></a>
+deepfake_audio_detector.h5
 
-Add additional notes about how to deploy this on a live system.
+🎈 Usage <a name="usage"></a>
 
-## ⛏️ Built Using <a name = "built_using"></a>
+Run the application:
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+python main_ver_9.0.py
 
-## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+Forensic HUD: The screen displays a real-time status for both Audio and Video.
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+Biometric Calibration: Stay approximately 1-2 feet from the camera for accurate depth sensing.
 
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+Exit: Press 'q' to close the session.
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+📊 Logic Matrix <a name = "logic_matrix"></a>
+
+Result
+
+Video Logic
+
+Audio Logic
+
+AUTHENTIC HUMAN
+
+Z-Depth > 0.018 + AI < 0.85
+
+Real Harmonics
+
+DEEPFAKE
+
+Z-Depth > 0.018 + AI > 0.85
+
+Synthetic Artifacts
+
+CARTOON / PHOTO
+
+Z-Depth < 0.018 (Flat)
+
+Signal Ignored
+
+⛏️ Built Using <a name = "built_using"></a>
+
+TensorFlow - Deep Learning Framework
+
+MediaPipe - 3D Face Mesh & Landmarks
+
+Librosa - Audio Processing
+
+OpenCV - Computer Vision
+
+SoundDevice - Real-time Audio I/O
+
+✍️ Authors <a name = "authors"></a>
+
+Your Name / Admin - Lead Development & Optimization
+
+Gemini AI - Engineering & Bug Resolution
+
+🎉 Acknowledgements <a name = "acknowledgement"></a>
+
+MediaPipe Team for the 3D Face Mesh API.
+
+Librosa community for spectral analysis tools.
+
+Inspiration from modern liveness detection research.
