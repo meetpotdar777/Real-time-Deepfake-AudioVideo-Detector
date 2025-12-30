@@ -70,23 +70,23 @@ python main_ver_9.0.py
 
 # ⛏️ Built Using <a name = "built_using"></a>
 
-### TensorFlow - Deep Learning Framework
+#### TensorFlow - Deep Learning Framework
 
-### MediaPipe - 3D Face Mesh & Landmarks
+#### MediaPipe - 3D Face Mesh & Landmarks
 
-### Librosa - Audio Processing
+#### Librosa - Audio Processing
 
-### OpenCV - Computer Vision
+#### OpenCV - Computer Vision
 
-### SoundDevice - Real-time Audio I/O
+#### SoundDevice - Real-time Audio I/O
 
 # ✍️ Authors <a name = "authors"></a>
 
-### Your Name / Admin - Lead Development & Optimization
-### Gemini AI - Engineering & Bug Resolution
+#### Your Name / Admin - Lead Development & Optimization
+#### Gemini AI - Engineering & Bug Resolution
 
 # 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-### MediaPipe Team for the 3D Face Mesh API.
-### Librosa community for spectral analysis tools.
-### Inspiration from modern liveness detection research.
+#### MediaPipe Team for the 3D Face Mesh API.
+#### Librosa community for spectral analysis tools.
+#### Inspiration from modern liveness detection research.
