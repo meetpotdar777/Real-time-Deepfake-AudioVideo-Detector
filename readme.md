@@ -17,22 +17,6 @@
 
 </p>
 
-📝 Table of Contents
-
-About
-
-Getting Started
-
-Usage
-
-Built Using
-
-Logic Matrix
-
-Authors
-
-Acknowledgments
-
 🧐 About <a name = "about"></a>
 
 This project provides a robust solution for real-time digital integrity verification. By combining MediaPipe's 3D Face Mesh with a Deep Learning Audio Analysis engine, the system can distinguish between a real human, a deepfake video, and a simple 2D image or cartoon.
